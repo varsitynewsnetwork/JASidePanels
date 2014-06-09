@@ -154,7 +154,7 @@ static char ja_kvoContext;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog("ja side panel controller view did load")
+    NSLog(@"ja side panel controller view did load");
     self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
     self.centerPanelContainer = [[UIView alloc] initWithFrame:self.view.bounds];
@@ -181,7 +181,7 @@ static char ja_kvoContext;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    NSLog("ja side panel controller view will appear")
+    NSLog(@"ja side panel controller view will appear");
     // ensure correct view dimensions
     [self _layoutSideContainers:NO duration:0.0f];
     [self _layoutSidePanels];
@@ -191,7 +191,7 @@ static char ja_kvoContext;
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    NSLog("ja side panel controller view did appear")
+    NSLog(@"ja side panel controller view did appear");
 
     [self _adjustCenterFrame]; //Account for possible rotation while view appearing
 }
