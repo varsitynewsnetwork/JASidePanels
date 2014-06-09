@@ -180,6 +180,7 @@ static char ja_kvoContext;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    NSLog("ja side panel controller view will appear")
     // ensure correct view dimensions
     [self _layoutSideContainers:NO duration:0.0f];
     [self _layoutSidePanels];
@@ -189,6 +190,8 @@ static char ja_kvoContext;
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    NSLog("ja side panel controller view did appear")
+
     [self _adjustCenterFrame]; //Account for possible rotation while view appearing
 }
 
