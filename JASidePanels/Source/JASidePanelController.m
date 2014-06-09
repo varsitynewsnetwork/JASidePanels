@@ -154,6 +154,7 @@ static char ja_kvoContext;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog("ja side panel controller view did load")
     self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
     self.centerPanelContainer = [[UIView alloc] initWithFrame:self.view.bounds];
